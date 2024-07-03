@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body style="background-color: #3b4664 ">
+
+    <div>
+      <input type="text" name="display" id="display" class="inputBox">
+    </div>
+
+    <div class="grid-container">
+      <input type="button" value="7" class="calciBtn" onclick="document.getElementById('display').value += '7' ">
+      <input type="button" value="8" class="calciBtn" onclick="document.getElementById('display').value += '8' ">
+      <input type="button" value="9" class="calciBtn" onclick="document.getElementById('display').value += '9' ">
+      <input type="button" value="Del" class="deleteBtn" onclick="document.getElementById('display').value = display.value.toString().slice(0, -1)">
+      <input type="button" value="4" class="calciBtn" onclick="document.getElementById('display').value += '4' ">
+      <input type="button" value="5" class="calciBtn" onclick="document.getElementById('display').value += '5' ">
+      <input type="button" value="6" class="calciBtn" onclick="document.getElementById('display').value += '6' ">
+      <input type="button" value="+" class="calciBtn" onclick="document.getElementById('display').value += '+' ">
+      <input type="button" value="1" class="calciBtn" onclick="document.getElementById('display').value += '1' ">
+      <input type="button" value="2" class="calciBtn" onclick="document.getElementById('display').value += '2' ">
+      <input type="button" value="3" class="calciBtn" onclick="document.getElementById('display').value += '3' ">
+      <input type="button" value="-" class="calciBtn" onclick="document.getElementById('display').value += '-' ">
+      <input type="button" value="." class="calciBtn" onclick="document.getElementById('display').value += '.' ">
+      <input type="button" value="0" class="calciBtn" onclick="document.getElementById('display').value += '0' ">
+      <input type="button" value="/" class="calciBtn" onclick="document.getElementById('display').value += '/' ">
+      <input type="button" value="x" class="calciBtn" onclick="document.getElementById('display').value += 'x' ">
+
+      <div class="grid-container1">
+        <input type="button" value="RESET" class="resetBtn" onclick="document.getElementById('display').value = '' ">
+        <input type="button" value="=" class="equalBtn" onclick="calculate()">
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
